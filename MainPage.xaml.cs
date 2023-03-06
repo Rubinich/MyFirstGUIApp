@@ -27,27 +27,6 @@ namespace MyFirstGUIApp
             this.InitializeComponent();
         }
 
-        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            textBlockIspis.Text = "Hello Alojz Rubinić";
-        }
-
-        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            int a = Int32.Parse(textBox1.Text);
-        }
-
-        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            int b = Int32.Parse(textBox2.Text);
-        }
-
-
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             int a = Int32.Parse(textBox1.Text);
@@ -78,6 +57,21 @@ namespace MyFirstGUIApp
             int b = Int32.Parse(textBox2.Text);
             int result = a / b;
             textBlockAns.Text = result.ToString();
+        }
+
+        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+        {
+            if(radioButton1.IsChecked == true) { 
+                textBlockAns.Text = Convert.ToDouble(result, 10);
+            }  
+        }
+
+        private void radioButton2_Checked(object sender, RoutedEventArgs e)
+        {
+            if(radioButton2.IsChecked == true)
+            {
+
+            }
         }
     }
 }

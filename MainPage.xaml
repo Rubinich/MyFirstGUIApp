@@ -8,17 +8,19 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock x:Name="textBlockIspis" Margin="1369,10,0,0" TextWrapping="Wrap" Text="Text" VerticalAlignment="Top" Height="150" Width="450" SelectionChanged="TextBlock_SelectionChanged" FontSize="48" TextAlignment="Center" FontStyle="Normal" HorizontalAlignment="Left"/>
-        <Button Content="Press" Margin="1515,154,0,0" Height="150" Width="300" FontSize="72" FontWeight="Bold" Click="Button_Click" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="78,476,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.472" Height="142" Width="196" FontSize="48" TextChanged="textBox1_TextChanged"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="718,508,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="136" Width="242" FontSize="48" TextChanged="textBox2_TextChanged"/>
-        <TextBlock x:Name="textBlockNoName" HorizontalAlignment="Left" Margin="998,548,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" SelectionChanged="TextBlock_SelectionChanged_1" Height="67" Width="170" FontSize="72" FontWeight="Bold"/>
-        <TextBlock x:Name="textBlockAns" HorizontalAlignment="Left" Margin="1248,557,0,0" TextWrapping="Wrap" Text="TextBlockAns" VerticalAlignment="Top" Height="104" Width="437" FontSize="48" SelectionChanged="textBlockAns_SelectionChanged"/>
-        <Button x:Name="button1" Content="+" Margin="442,79,0,0" VerticalAlignment="Top" Height="150" Width="150" Click="button1_Click" FontSize="72" FontWeight="Bold" HorizontalAlignment="Left"/>
-        <Button x:Name="button2" Content="-" Margin="472,357,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button2_Click"/>
-        <Button x:Name="button3" Content="*" Margin="472,580,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button3_Click"/>
-        <Button x:Name="button4" Content="/" Margin="442,806,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button4_Click"/>
+    <Grid RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="54,476,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.472" Height="142" Width="220" FontSize="48"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="532,479,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="136" Width="230" FontSize="48"/>
+        <TextBlock x:Name="textBlockNoName" HorizontalAlignment="Left" Margin="812,499,0,0" TextWrapping="Wrap" Text="=" VerticalAlignment="Top" Height="97" Width="173" FontSize="72" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlockAns" HorizontalAlignment="Left" Margin="903,483,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="137" Width="437" FontSize="48"/>
+        <Button x:Name="button1" Content="+" Margin="328,166,0,0" VerticalAlignment="Top" Height="150" Width="150" Click="button1_Click" FontSize="72" FontWeight="Bold"/>
+        <Button x:Name="button2" Content="-" Margin="328,371,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button2_Click"/>
+        <Button x:Name="button3" Content="*" Margin="328,586,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button3_Click"/>
+        <Button x:Name="button4" Content="/" Margin="328,809,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button4_Click"/>
+        <RadioButton x:Name="radioButton1" Content="Decimal" Margin="1500,313,0,0" VerticalAlignment="Top" Height="71" Width="237" FontSize="48" FontWeight="Bold"/>
+        <RadioButton x:Name="radioButton2" Content="Binary" Margin="1500,425,0,0" VerticalAlignment="Top" Height="83" Width="237" FontSize="48" FontWeight="Bold"/>
+        <RadioButton x:Name="radioButton3" Content="Hexadecimal" Margin="1500,547,0,0" VerticalAlignment="Top" Height="101" Width="348" FontSize="48" FontWeight="Bold"/>
+        <RadioButton x:Name="radioButton4" Content="Octal" Margin="1500,678,0,0" VerticalAlignment="Top" Height="90" Width="174" FontSize="48" FontWeight="Bold"/>
 
     </Grid>
 </Page>
