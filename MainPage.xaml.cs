@@ -70,7 +70,7 @@ namespace MyFirstGUIApp
         {
             if(radioButton2.IsChecked == true)
             {
-
+                textBlockAns.Text = Convert.ToString(result, 2);
             }
         }
     }

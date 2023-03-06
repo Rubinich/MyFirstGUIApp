@@ -17,8 +17,8 @@
         <Button x:Name="button2" Content="-" Margin="328,371,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button2_Click"/>
         <Button x:Name="button3" Content="*" Margin="328,586,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button3_Click"/>
         <Button x:Name="button4" Content="/" Margin="328,809,0,0" VerticalAlignment="Top" Height="150" Width="150" FontSize="72" FontWeight="Bold" Click="button4_Click"/>
-        <RadioButton x:Name="radioButton1" Content="Decimal" Margin="1500,313,0,0" VerticalAlignment="Top" Height="71" Width="237" FontSize="48" FontWeight="Bold"/>
-        <RadioButton x:Name="radioButton2" Content="Binary" Margin="1500,425,0,0" VerticalAlignment="Top" Height="83" Width="237" FontSize="48" FontWeight="Bold"/>
+        <RadioButton x:Name="radioButton1" Content="Decimal" Margin="1500,313,0,0" VerticalAlignment="Top" Height="71" Width="237" FontSize="48" FontWeight="Bold" Checked="radioButton1_Checked"/>
+        <RadioButton x:Name="radioButton2" Content="Binary" Margin="1500,425,0,0" VerticalAlignment="Top" Height="83" Width="237" FontSize="48" FontWeight="Bold" Checked="radioButton2_Checked"/>
         <RadioButton x:Name="radioButton3" Content="Hexadecimal" Margin="1500,547,0,0" VerticalAlignment="Top" Height="101" Width="348" FontSize="48" FontWeight="Bold"/>
         <RadioButton x:Name="radioButton4" Content="Octal" Margin="1500,678,0,0" VerticalAlignment="Top" Height="90" Width="174" FontSize="48" FontWeight="Bold"/>
 
