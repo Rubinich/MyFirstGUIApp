@@ -33,6 +33,7 @@ namespace MyFirstGUIApp
             int b = Int32.Parse(textBox2.Text);
             int result = a + b;
             textBlockAns.Text = result.ToString();
+            radioButton1.IsChecked = true;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
@@ -41,6 +42,7 @@ namespace MyFirstGUIApp
             int b = Int32.Parse(textBox2.Text);
             int result = a - b;
             textBlockAns.Text = result.ToString();
+            radioButton1.IsChecked = true;
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -49,6 +51,7 @@ namespace MyFirstGUIApp
             int b = Int32.Parse(textBox2.Text);
             int result = a * b;
             textBlockAns.Text = result.ToString();
+            radioButton1.IsChecked = true;
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -57,6 +60,7 @@ namespace MyFirstGUIApp
             int b = Int32.Parse(textBox2.Text);
             int result = a / b;
             textBlockAns.Text = result.ToString();
+            radioButton1.IsChecked = true;
         }
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
@@ -71,6 +75,20 @@ namespace MyFirstGUIApp
             if(radioButton2.IsChecked == true)
             {
                 textBlockAns.Text = Convert.ToString(result, 2);
+            }
+        }
+        private void radioButton3_Checked(object sender, RoutedEventArgs e)
+        {
+            if (radioButton3.IsChecked == true)
+            {
+                textBlockAns.Text = Convert.ToString(result, 16);
+            }
+        }
+        private void radioButton4_Checked(object sender, RoutedEventArgs e)
+        {
+            if (radioButton4.IsChecked == true)
+            {
+                textBlockAns.Text = Convert.ToString(result, 8);
             }
         }
     }
