@@ -62,7 +62,7 @@ namespace MyFirstGUIApp
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
         {
             if(radioButton1.IsChecked == true) { 
-                textBlockAns.Text = Convert.ToDouble(result, 10);
+                textBlockAns.Text = Convert.ToString(result, 10);
             }  
         }
 
